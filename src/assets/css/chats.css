@@ -1,0 +1,268 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.conversation-info-img{
+    background: url(https://assets.fireside.fm/file/fireside-images/podcasts/images/b/bc7f1faf-8aad-4135-bb12-83a8af679756/cover.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0px 20px 0px 0px;
+}
+div.conversation-title > p{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+}
+div.top-bar i.fa-bars{
+    font-size: 31px;
+    color: #bfbfbf;
+    margin: 0px 15px 0px 0px;
+}
+div.top-bar i.fa-search{
+    position: absolute;
+    left: 20px;
+    color: #bfbfbf;
+}
+div.new-conversation{
+    background: #527f91;
+    border-radius: 50% 50%;
+    width: 85px;
+    position: absolute;
+    height: 85px;
+    color: white;
+    font-size: 90px;
+    font-family: 'Poppins';
+    box-shadow: 0px 0px 30px -9px #213a44;
+    font-weight: 100;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    align-items: center;
+}
+div.top-bar{
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    background: #e7e7e7;
+}
+input.search-top {
+    width: 100%;
+    margin: 0px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: white;
+    padding: 9px 18px 9px 34px;
+}
+div.conversation-title{
+
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+div.conversation-info {
+    display: flex;
+    padding: 20px;
+    background: #527f91;
+    height: 105px;
+    border-bottom: 2px solid #197fa7;
+}
+div.conversation-img{
+    background: url(https://assets.fireside.fm/file/fireside-images/podcasts/images/b/bc7f1faf-8aad-4135-bb12-83a8af679756/cover.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* border: 5px solid #dbdbdb; */
+    margin: 15px 30px 15px 0px;
+}
+div.conversation-addition {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+div.conversation-addition i {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0px 10px;
+    color: #476874;
+}
+div.conversation-addition > div {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+input.conversation-search {
+    border-radius: 20px;
+    padding: 9px 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #b8e0ef;
+    width: 280px;
+    background: #476874;
+    margin: 0px 10px;
+}
+div.message-time{
+    text-align: right;
+    color: #dddddd;
+    font-weight: 500;
+    font-size: 13px;
+}
+div.conversation-message > p:nth-of-type(1){
+    margin: 0;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+}
+div.conversation-message > p:nth-of-type(2){
+    margin: 0;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+div.conversation-area {
+    background: linear-gradient(45deg, rgba(233,251,255,1) 43%, rgba(255,233,254,1) 100%);
+    width: 100%;
+    height: calc(100% - 105px);
+    padding: 0px 20px;
+    
+    display: inline-block;
+}
+div.message-me::before, div.message-other::before {
+    content: '';
+    width: 0;
+    top: 0;
+    height: 0;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    z-index:-1;
+}
+div.message-me::before{
+    border-top: 15px solid #8f4277;
+    left: -11px;
+}
+div.message-other::before{
+    border-top: 15px solid #375176;
+    right: -11px;
+}
+div.message-me, div.message-other{
+    padding: 15px 15px 5px 15px;
+    width: fit-content;
+    min-width: 10%;
+    color: #FFF;
+    max-width: 80%;
+    border-radius: 7px;
+}
+div.message-me{
+    word-wrap: break-word;
+    background: #8f4277;
+}
+div.message-other{
+    margin: auto 0 auto  auto;
+    background: #375176;
+}
+div.message-area {
+    border-radius: 0px 10px 10px 10px;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+    z-index: 2;
+}
+div.message-other div.message-sender-info{
+    color: #8fbdff;
+}
+div.message-me div.message-sender-info{
+    color: #ffd5fd;
+}
+div.message-sender-info{
+    margin: -7px 0px 10px 0px;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.conversation-message{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0px 0px;
+}
+div.conversation{
+    padding: 0px 30px;
+}
+div.conversation > div{
+    display:flex;
+}
+div#left{
+    position: relative;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 30%;
+}
+div#right{
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 70%;
+}
+div.conversation.active {
+    background: #f5f5f5;
+}
+div.conversation-date {
+    margin: 20px 0px;
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    color: #000;
+}
